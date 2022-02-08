@@ -1,1 +1,29 @@
 theme: jekyll-theme-minimal
+name: blog.mandrewcito.com
+markdown: kramdown
+highlighter: pygments
+exclude: ["LICENSE.txt", "README.md", "Makefile"]
+page.title: blog.mandrewcito.com
+
+baseurl: ""
+permalink: /:title/
+
+repository:  mandrewcito/blog.mandrewcito.com
+author: Andrés Baamonde Lozano
+
+# Paginate
+paginate: 1
+paginate_path: "/pagination/page:num/"
+
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-multiple-languages-plugin
+  - jekyll-feed
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["gl", "en", "es"]
+
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
